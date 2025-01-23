@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASGI Digital Solver</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 800px;
+            background: url('C:/Users/DELL/Downloads/Software_company_vasgi/software.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            border-radius: 10px;
+            position: relative;
+        }
+        header img {
+            height: 60px;
+            display: block;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 2em;
+            letter-spacing: 2px;
+            margin: 10px 0;
+        }
+        nav {
+            text-align: center;
+            background: #00509E;
+            padding: 1em 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+            padding: 2em;
+            margin-bottom: 2em;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section.active {
+            display: block;
+        }
+        section h2 {
+            text-align: center;
+            color: #00509E;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #000;
+            color: white;
+        }
+        .product-table td {
+            vertical-align: top;
+            padding: 10px;
+            color: white;
+        }
+        .product-table .title-row {
+            background-color: #b0b0b0;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .product-table img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #00509E;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="C:/Users/DELL/Downloads/Software_company_vasgi/vasgilogo.png" alt="VASGI Logo">
+    <h1>VASGI Digital Solver</h1>
+</header>
+
+<nav>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('vision')">Vision & Mission</a>
+    <a onclick="showSection('goals')">Goals</a>
+    <a onclick="showSection('products')">Products</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About VASGI</h2>
+    <p><strong>Address:</strong> Jl. Sukabumi No. 123, Bandung, West Java, Indonesia</p>
+    <p><strong>Social Media:</strong></p>
+    <ul>
+        <li><a href="https://instagram.com/vasgi" style="color: #00509E;">Instagram: @vasgi</a></li>
+        <li><a href="https://linkedin.com/company/vasgi" style="color: #00509E;">LinkedIn: VASGI Digital Solver</a></li>
+    </ul>
+    <p><strong>Website:</strong> <a href="https://www.vasgi.com" style="color: #00509E;">www.vasgi.com</a></p>
+    <p><strong>Marketing Contact:</strong> marketing@vasgi.com | +62 812 3456 7890</p>
+</section>
+
+<section id="vision">
+    <h2>Vision & Mission</h2>
+    <h3 style="color: #003366;">Vision:</h3>
+    <p>To become a global leader in providing innovative digital solutions that empower businesses to thrive.</p>
+    <h3 style="color: #003366;">Mission:</h3>
+    <ul>
+        <li>Deliver SaaS solutions that enhance productivity.</li>
+        <li>Integrate AI and automation technologies for global digital transformation.</li>
+        <li>Develop data-driven marketing tools to support businesses worldwide.</li>
+        <li>Create environmentally friendly and sustainable digital processes.</li>
+    </ul>
+</section>
+
+<section id="goals">
+    <h2>Goals</h2>
+    <ul>
+        <li>To become the top choice for digital solutions in Southeast Asia by 2026.</li>
+        <li>Expand the client portfolio globally in Europe and North America.</li>
+        <li>Diversify services into agritech and edtech sectors with IoT and AI innovations.</li>
+    </ul>
+</section>
+
+<section id="products">
+    <h2>Products and Services</h2>
+    <table class="product-table">
+        <tr class="title-row">
+            <td colspan="2">SaaS for SME Management</td>
+        </tr>
+        <tr>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/SaaS-company.jpg" alt="SaaS Example"></td>
+            <td>
+                <p>Features CRM, ERP, and inventory management systems. <strong>Advantage:</strong> Seamless integration, customization for diverse industries.</p>
+            </td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">Educational Software (LMS)</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Interactive learning platforms with gamification and real-time progress tracking. <strong>Advantage:</strong> Supports hybrid learning with multilingual capabilities.</p>
+            </td>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/Blog_A-Guide-to-Selecting-the-Right-LMS-1.jpg" alt="LMS Example"></td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">Custom Web and Mobile Applications</td>
+        </tr>
+        <tr>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/Custom-Mobile-App-Development-1.png" alt="Custom Applications Example"></td>
+            <td>
+                <p>Secure and scalable applications tailored to specific client needs. <strong>Advantage:</strong> High scalability and compliance with data security standards.</p>
+            </td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">AI-Driven Cybersecurity Solutions</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Real-time threat intelligence and predictive analytics. <strong>Advantage:</strong> Proactive protection with minimal manual intervention.</p>
+            </td>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/cyber security.jpg" alt="Cybersecurity Example"></td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">Remote Work Collaboration Tools</td>
+        </tr>
+        <tr>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/remortwork_solution.png" alt="Remote Work Tools Example"></td>
+            <td>
+                <p>Integrated video conferencing, task management, and secure file sharing. <strong>Advantage:</strong> Enhanced team productivity for hybrid and remote setups.</p>
+            </td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">Agritech Solutions</td>
+        </tr>
+        <tr>
+            <td>
+                <p>IoT-based tools for precision farming and resource optimization. <strong>Advantage:</strong> Sustainability-focused solutions to increase crop yield.</p>
+            </td>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/agriculture.jpg" alt="Agritech Example"></td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">E-commerce SaaS Tools</td>
+        </tr>
+        <tr>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/eCommerce-2.jpg" alt="E-commerce Example"></td>
+            <td>
+                <p>Features include payment gateways, stock management, and customer insights. <strong>Advantage:</strong> Scalable solutions for global e-commerce.</p>
+            </td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">Digital Marketing Platforms</td>
+        </tr>
+        <tr>
+            <td>
+                <p>AI-driven SEO, SEM, and content optimization tools. <strong>Advantage:</strong> Personalized campaigns with measurable ROI.</p>
+            </td>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/what-is-digital-marketing-1.png" alt="Digital Marketing Example"></td>
+        </tr>
+        <tr class="title-row">
+            <td colspan="2">AI and Machine Learning Solutions</td>
+        </tr>
+        <tr>
+            <td><img src="C:/Users/DELL/Downloads/Software_company_vasgi/AI_MACHINE_LEARNING.jpg" alt="AI and Machine Learning Example"></td>
+            <td>
+                <p>Predictive analytics, chatbot integration, and personalized recommendations. <strong>Advantage:</strong> Adaptive algorithms to meet evolving client needs.</p>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:info@vasgi.com" style="color: #00509E;">info@vasgi.com</a></p>
+    <p><strong>Website:</strong> <a href="https://www.vasgi.com" style="color: #00509E;">www.vasgi.com</a></p>
+</section>
+
+<footer>
+    <img src="C:/Users/DELL/Downloads/Software_company_vasgi/vasgilogo.png" alt="VASGI Logo">
+    <p>&copy; 2025 VASGI Digital Solver. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
