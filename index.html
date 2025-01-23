@@ -4,95 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VASGI Digital Solver</title>
-    
     <style>
+        /* General Body Styling */
         body {
             font-family: 'Open Sans', sans-serif;
             margin: 0 auto;
             padding: 0;
-            max-width: 600px;
-            background: url('software.jpg') no-repeat center center fixed;
+            max-width: 700px;
+            background: url('C:/Users/DELL/Downloads/Software_company_vasgi/software.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
         }
+
         header, footer {
             background-color: #003366;
             color: white;
             text-align: center;
             padding: 1.5em 0;
             border-radius: 10px;
-            position: relative;
         }
+
         header img {
             height: 60px;
             display: block;
             margin: 0 auto;
         }
+
         header h1 {
-            font-size: 2em;
-            letter-spacing: 2px;
-            margin: 10px 0;
+            font-size: 1.8em;
         }
+
         nav {
             text-align: center;
             background: #00509E;
             padding: 1em 0;
-            border-radius: 5px;
         }
+
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            cursor: pointer;
+            font-size: 1em;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+
         section {
-            display: none;
-            padding: 2em;
-            margin-bottom: 2em;
-            background: #f9f9f9;
+            padding: 1em;
+            margin-bottom: 1em;
+            background: rgba(255, 255, 255, 0.9);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        section.active {
-            display: block;
-        }
-        section h2 {
-            text-align: center;
-            color: #00509E;
-            font-size: 2em;
-            margin-bottom: 1em;
-        }
-        .product-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #000;
-            color: white;
-        }
-        .product-table td {
-            vertical-align: top;
-            padding: 10px;
-            color: white;
-        }
-        .product-table .title-row {
-            background-color: #b0b0b0;
-            color: white;
-            text-align: left;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
+
+        /* Responsive Images */
         .product-table img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
+            width: 100%;
+            height: auto;
             border: 3px solid #00509E;
             border-radius: 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .product-table td {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                height: 40px;
+            }
+
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .product-table td {
+                display: block;
+                text-align: center;
+            }
         }
     </style>
     <script>
@@ -109,11 +122,9 @@
 <body>
 
 <header>
-    <img src="vasgilogo.png" alt="VASGI Logo">
+    <img src="C:/Users/DELL/Downloads/Software_company_vasgi/vasgilogo.png" alt="VASGI Logo">
     <h1>VASGI Digital Solver</h1>
-    <h3 style="color: #003366;"></h3>
     <p>Driving Transformation with Cutting-Edge Digital Solutions.</p>
-</header>
 </header>
 
 <nav>
@@ -127,12 +138,9 @@
 <section id="Our Company" class="active">
     <h2>Company Profile</h2>
     <p>VASGI DIGITAL SOLVER is a company established to revolutionize the digital landscape by providing cutting-edge solutions tailored to the evolving needs of modern businesses. With a foundation rooted in innovation and customer-centricity, VASGI leverages years of experience to deliver impactful results.</p>
-
     <p>The potential of VASGI lies in its strength of expertise and a loyal market base, particularly in Asia, with a significant foothold in Indonesia. VASGI has successfully navigated the region's diverse business ecosystem, establishing itself as a trusted partner for companies seeking to integrate advanced technologies like AI, machine learning, and data analytics into their operations. This proven track record has positioned VASGI as a go-to provider for scalable, efficient, and sustainable digital solutions.</p>
-
     <p>VASGI's approach emphasizes collaboration with businesses of all sizes, from startups to multinational corporations, ensuring that every solution is tailored to meet specific challenges. By prioritizing innovation and adaptability, VASGI not only meets current demands but also anticipates future industry trends, ensuring long-term client success.</p>
 </section>
-
 
 <section id="vision">
     <h2>Vision & Mission</h2>
