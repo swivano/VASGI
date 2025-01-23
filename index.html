@@ -55,12 +55,39 @@
             border-radius: 10px;
         }
 
-        /* Responsive Images */
-        .product-table img {
+        .product-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .product-card .title-row {
+            background-color: #b0b0b0;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        .product-card img {
             width: 100%;
             height: auto;
-            border: 3px solid #00509E;
-            border-radius: 10px;
+            display: block;
+        }
+
+        .product-card .content {
+            padding: 15px;
+            color: #333;
         }
 
         /* Media Queries for Responsiveness */
@@ -81,11 +108,6 @@
             section h2 {
                 font-size: 1.5em;
             }
-
-            .product-table td {
-                display: block;
-                text-align: center;
-            }
         }
 
         @media (max-width: 480px) {
@@ -100,11 +122,6 @@
             nav a {
                 display: block;
                 margin: 5px 0;
-            }
-
-            .product-table td {
-                display: block;
-                text-align: center;
             }
         }
     </style>
@@ -166,89 +183,21 @@
 
 <section id="products">
     <h2>Products and Services</h2>
-    <table class="product-table">
-        <tr class="title-row">
-            <td colspan="2">SaaS for SME Management</td>
-        </tr>
-        <tr>
-            <td><img src="SaaS-company.jpg" alt="SaaS Example"></td>
-            <td>
-                <p>Features CRM, ERP, and inventory management systems. <strong>Advantage:</strong> Seamless integration, customization for diverse industries.</p>
-            </td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">Educational Software (LMS)</td>
-        </tr>
-        <tr>
-            <td>
-                <p>Interactive learning platforms with gamification and real-time progress tracking. <strong>Advantage:</strong> Supports hybrid learning with multilingual capabilities.</p>
-            </td>
-            <td><img src="Blog_A-Guide-to-Selecting-the-Right-LMS-1.jpg" alt="LMS Example"></td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">Custom Web and Mobile Applications</td>
-        </tr>
-        <tr>
-            <td><img src="Custom-Mobile-App-Development-1.png" alt="Custom Applications Example"></td>
-            <td>
-                <p>Secure and scalable applications tailored to specific client needs. <strong>Advantage:</strong> High scalability and compliance with data security standards.</p>
-            </td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">AI-Driven Cybersecurity Solutions</td>
-        </tr>
-        <tr>
-            <td>
-                <p>Real-time threat intelligence and predictive analytics. <strong>Advantage:</strong> Proactive protection with minimal manual intervention.</p>
-            </td>
-            <td><img src="cyber security.jpg" alt="Cybersecurity Example"></td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">Remote Work Collaboration Tools</td>
-        </tr>
-        <tr>
-            <td><img src="remortwork_solution.png" alt="Remote Work Tools Example"></td>
-            <td>
-                <p>Integrated video conferencing, task management, and secure file sharing. <strong>Advantage:</strong> Enhanced team productivity for hybrid and remote setups.</p>
-            </td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">Agritech Solutions</td>
-        </tr>
-        <tr>
-            <td>
-                <p>IoT-based tools for precision farming and resource optimization. <strong>Advantage:</strong> Sustainability-focused solutions to increase crop yield.</p>
-            </td>
-            <td><img src="agriculture.jpg" alt="Agritech Example"></td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">E-commerce SaaS Tools</td>
-        </tr>
-        <tr>
-            <td><img src="eCommerce-2.jpg" alt="E-commerce Example"></td>
-            <td>
-                <p>Features include payment gateways, stock management, and customer insights. <strong>Advantage:</strong> Scalable solutions for global e-commerce.</p>
-            </td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">Digital Marketing Platforms</td>
-        </tr>
-        <tr>
-            <td>
-                <p>AI-driven SEO, SEM, and content optimization tools. <strong>Advantage:</strong> Personalized campaigns with measurable ROI.</p>
-            </td>
-            <td><img src="what-is-digital-marketing-1.png" alt="Digital Marketing Example"></td>
-        </tr>
-        <tr class="title-row">
-            <td colspan="2">AI and Machine Learning Solutions</td>
-        </tr>
-        <tr>
-            <td><img src="AI_MACHINE_LEARNING.jpg" alt="AI and Machine Learning Example"></td>
-            <td>
-                <p>Predictive analytics, chatbot integration, and personalized recommendations. <strong>Advantage:</strong> Adaptive algorithms to meet evolving client needs.</p>
-            </td>
-        </tr>
-    </table>
+    <div class="product-card">
+        <div class="title-row">SaaS for SME Management</div>
+        <img src="SaaS-company.jpg" alt="SaaS Example">
+        <div class="content">
+            <p>Features CRM, ERP, and inventory management systems. <strong>Advantage:</strong> Seamless integration, customization for diverse industries.</p>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="title-row">Educational Software (LMS)</div>
+        <img src="Blog_A-Guide-to-Selecting-the-Right-LMS-1.jpg" alt="LMS Example">
+        <div class="content">
+            <p>Interactive learning platforms with gamification and real-time progress tracking. <strong>Advantage:</strong> Supports hybrid learning with multilingual capabilities.</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
@@ -257,7 +206,6 @@
     <p><strong>Official Website:</strong> <a href="https://www.vasgi.com" style="color: #00509E;">www.vasgi.com</a></p>
     <p><strong>Marketing Contact:</strong> marketing@vasgi.com | +31 20 24 45 264</p>
     <p><strong>Email:</strong> <a href="mailto:info@vasgi.com" style="color: #00509E;">info@vasgi.com</a></p>
-    <p><strong>Website:</strong> <a href="https://www.vasgi.com" style="color: #00509E;">www.vasgi.com</a></p>
     <p><strong>Social Media:</strong></p>
     <ul>
         <li><a href="https://instagram.com/vasgi" style="color: #00509E;">Instagram: @vasgi</a></li>
@@ -267,8 +215,4 @@
 
 <footer>
     <img src="vasgilogo.png" alt="VASGI Logo">
-    <p>&copy; 2025 VASGI Digital Solver. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+    <p>&copy; 2025 VASGI Digital
